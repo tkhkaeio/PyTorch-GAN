@@ -31,6 +31,8 @@ Baseline: ２層のCNNと2層のFCNでの識別を実行する．プーリング
 
 Extension1: モデルの頑健性を高めるため，ランダムに[-t,t]度の回転を入力に加えた(t=5,10,15)． Random roation from angle -t to t(t=5,10,15).
 
+blend = (augmented data size)/(total data size)
+
 Extension2: cGANとDCGANで生成した手書き文字を生成し，データを増やし精度を比較した．  Generate new data by cGAN, DCGAN.
 
 cGANは入力にラベルを条件づけて生成する．(200epochs training)   
