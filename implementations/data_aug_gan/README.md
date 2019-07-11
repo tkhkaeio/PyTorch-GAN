@@ -41,7 +41,7 @@ cGANは入力にラベルを条件づけて生成する．(200epochs training)
 <img src="figures/gan.png">
 
 ### Experiment, Result
-全体で5回試行し，各10epoch学習した．この平均値とその95%信頼区間を報告する．($\bar{X} \pm 1.96*SE$)
+全体で5回試行し，各10epoch学習した．この平均値とその95%信頼区間を報告する． ( $\bar{X} \pm 1.96*SE$ )
 I sampled 5 times each experiment, which trains 10 epochs.
 
 | model | loss| acc|
