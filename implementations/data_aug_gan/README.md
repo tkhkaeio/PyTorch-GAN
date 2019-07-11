@@ -1,4 +1,4 @@
-#Data Augmentation by GAN
+# Data Augmentation by GAN
 
 I test whether GANs are of great use in data augmentation.
 データ拡張をGANでできないか検証する．　
@@ -38,7 +38,7 @@ cGANは入力にラベルを条件づけて生成する．(200epochs training)
 
 <img src="figures/gan.png">
 
-### 実験，結果
+### Experiment, Result
 全体で5回試行し，各10epoch学習した．この平均値とその95%信頼区間を報告する．($\bar{X} \pm 1.96*SE$)
 I sampled 5 times each experiment, which trains 10 epochs.
 
@@ -54,7 +54,7 @@ I sampled 5 times each experiment, which trains 10 epochs.
 |baseline+DCGAN(blend=0.333) | 0.216|95.860|
 
 
-### 考察
+### Discussion
 
 GANのデータ拡張について，How good is my GAN?(Konstantin Shmelkov, Cordelia Schmid, Karteek Alahari) (https://arxiv.org/abs/1807.09499) 中で，GANの生成はクラスの中間データも生成してしまう可能性があるので，有効なデータ拡張になり得ないとある．また，CNN自体は人間の知覚と違う特徴に注目しているため，人間の目にはそっくりな手書き文字も，異なって見える．下のt-SNEでプロットした図を見れば，NNにとって，生成した文字が本物の文字の識別は容易であるとわかる．むしろ，ランダムに回転させる方が，回転不変量を獲得でき，モデルが汎化した．
 
